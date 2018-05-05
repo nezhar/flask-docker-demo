@@ -1,0 +1,8 @@
+docker build -t flask-docker-demo:0.0.1 .
+
+docker tag flask-docker-demo:0.0.1 nezhar/flask-docker-demo:0.0.1
+
+docker push nezhar/flask-docker-demo:0.0.1
+
+
+docker build -f multistage.Dockerfile -t flask-docker-demo-small:0.0.2 .
